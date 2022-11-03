@@ -15,6 +15,9 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 
 const app = express()
 
+// On Heroku it will use PORT value
+const port = process.env.PORT || 3000
+
 // Setup handlebars engine and view location
 app.set('view engine', 'hbs')
 
@@ -135,6 +138,6 @@ app.get('*', (req, res) => {
 
 // Starts up the server
 // 3000 is a good dev ports
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
