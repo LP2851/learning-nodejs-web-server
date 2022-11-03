@@ -1,6 +1,9 @@
 {
   "name": "web-server",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.x"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,4 +17,5 @@
     "hbs": "^4.0.1",
     "request": "^2.88.0"
   }
+
 }
